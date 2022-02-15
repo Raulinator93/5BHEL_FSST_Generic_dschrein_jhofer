@@ -1,4 +1,6 @@
-public class LinList<T> {
+import java.util.Iterator;
+
+public class LinList<T> implements Iterable{
     T element;
     LinList<T> followingElement = null;
     public LinList(T root) {
@@ -30,5 +32,18 @@ public class LinList<T> {
         if(followingElement!=null) {
             followingElement.PrintAll();
         }
+    }
+
+    public boolean existFollowingElement(){
+        if(followingElement==null){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    @Override
+    public Iterator iterator() {
+        return new LinListIterator<T>(this);
     }
 }
