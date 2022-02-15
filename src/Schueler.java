@@ -1,6 +1,10 @@
 public class Schueler implements Comparable {
     String Nachname;
 
+    public Schueler(String nachname) {
+        Nachname = nachname;
+    }
+
     public String getNachname() {
         return Nachname;
     }
