@@ -18,10 +18,10 @@ public class LinList<T> {
     }
 
     private int CountAlong(int i){
+        i++;
         if(followingElement == null){
             return i;
         }
-        i++;
         return followingElement.CountAlong(i);
     }
 
