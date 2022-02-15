@@ -28,6 +28,21 @@ public class main{
 
         System.out.println("Elemente: " + head.Count());  // sollte: 6 liefern
         head.PrintAll();
+
+        System.out.println("\n");
+
+        LinList<Schueler> list = new LinList<Schueler>(new Schueler("Lechner"));
+        list.Add(new Schueler("Bendra"));
+        list.Add(new Schueler("Scharnreitner"));
+        list.Add(new Schueler("Wiedermann"));
+
+        list.PrintAll();
+
+        System.out.println("\n");
+
+        for(Object s:list){
+            System.out.println();
+        }
     }
 
 }
