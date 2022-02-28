@@ -11,3 +11,5 @@ Die Funktion Add, Count und PrintAll wurden fertig ausprogrammiert. Die Klasse b
 #jhofer
 Tests durchgeführt
 Fehler der CountAlong ausgebessert
+Konstruktor zu Schueler zugefügt
+Die Funktion Search wurde ausprogrammiert.

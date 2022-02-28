@@ -40,6 +40,10 @@ public class main{
 
         System.out.println("\n");
 
+        list.Search("rt");
+
+        System.out.println("\n");
+
         for(Object s:list){
             System.out.println();
         }

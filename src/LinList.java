@@ -1,3 +1,6 @@
+import com.sun.jdi.CharValue;
+import com.sun.jdi.IntegerValue;
+
 import java.util.Iterator;
 
 public class LinList<T> implements Iterable{
@@ -45,5 +48,18 @@ public class LinList<T> implements Iterable{
     @Override
     public Iterator iterator() {
         return new LinListIterator<T>(this);
+    }
+
+    public void Search(String val){
+        if(element.toString() == val){
+            System.out.println(val + " existiert");
+            return;
+        }
+        if(followingElement!=null) {
+            followingElement.Search(val);
+        }
+        if(followingElement==null) {
+            System.out.println(val + " existiert nicht");
+        }
     }
 }
